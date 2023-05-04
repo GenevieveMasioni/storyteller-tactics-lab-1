@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* GLOBAL */
+
+:root {
+  --background-color: #fff;
+  --background-color-2: #f7f7f7;
+  --text-color: #222222;
+  --secondary-text-color: #a3acbb;
+  --primary-color: #c84e4c;
+  --secondary-color: #da9f5b;
+  --disabled-color: #edf1f7;
+  --border-color: #e8eced;
+  --base-padding: 1rem;
+  --small-padding: .5rem;
+  --base-margin: 1rem;
+  --large-margin: 3rem;
+  --base-border: .1rem var(--border-color) solid;
+  --thick-border: .2rem var(--border-color) solid;
+  --light-round-corner: .5rem;
+}
+
+html, body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: 'Libre Caslon Text', serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;833
+  height: 833px;
+  overflow: hidden;
+  /* height: calc(736px - 200px); */
+}
+
+a {
+  color: var(--primary-color);
+}
+
+img {
+  width: 100%;
+}
+
+.clickable:hover {
+   cursor: pointer;
+ }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* HEADER */
+
+.site-header {
+  /* background-color: var(--secondary-color); */
+  padding: var(--small-padding) var(--base-padding);
+  /* border-bottom: var(--base-border); */
+}
+
+.site-name {
+  margin: var(--base-margin) auto;
+  color: var(--primary-color);
+  font-weight: bold;
+  /* font-style: italic; */
+  /* display: none; */
+}
+
+.site-logo {
+  max-height: 6rem;
+}
+
+.announcement-banner {
+  background-color: var(----background-color-2);
+}
+
+/* MAIN */
+
+.main-content {
+  margin: var(--base-margin) auto;
+  padding: 0 var(--base-padding);
+}
+
+.section-2 {
+  border-right: var(--base-border);
+  border-left: var(--base-border);
+  padding: 0 var(--base-padding);
+}
+
+.section-description {
+  font-weight: normal;
+}
+
+
+/* CARD PICKER */
+
+.card-picker-categories {
+  border-bottom: var(--base-border);
+  margin-bottom: var(--base-margin);
+}
+
+.card-picker-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: .5rem;
+  padding: 0 var(--base-padding);
+  border: var(--base-border);
+  border-radius: var(--light-round-corner);
+  margin: var(--base-margin);
+  width: fit-content;
+}
+
+
+.card-picker-category .card-picker-category-icon {
+  height: 1rem;
+  width: auto;
+}
+
+/* FOOTER */
+
+.site-footer {
+  color: var(--secodnary-text-color);
+  padding: 0 var(--base-padding);
+  margin: var(--large-margin) auto;
+  text-align: center;
+}
+
+
+@media all and (max-width:950px) {
+}
