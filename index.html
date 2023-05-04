@@ -15,36 +15,76 @@
   <main class="main-content grid">
     <section class="section-1">
       <div class="section-header">
-        <h2 class="section-title">Find your starting point</h2>
+        <h2 class="section-title">Start here</h2>
+        <h4 class="section-description">Questions to find your starting point.</h4>
       </div>
-      <div class="section-main">
-        <img src="assets/images/cards/extra/Story_Building_System_-_Front.webp" alt="Story building system questions">
-        <img src="assets/images/cards/extra/Story_Building_System_-_Back.webp" alt="Story building system explanations">
+      <div class="section-main grid">
+        <img id="intro-card-front" class="card" src="assets/images/cards/extra/Story_Building_System_-_Front.webp" alt="Story building system questions">
+        <img id="intro-card-back" class="card invisible" src="assets/images/cards/extra/Story_Building_System_-_Back.webp" alt="Story building system explanations">
       </div>
     </section>
     <section class="section-2">
       <div class="section-header">
         <h2 class="section-title">Pick a tactic</h2>
-        <h4 class="section-description">Drag and drop your card into the story lab on the right.</h4>
+        <h4 class="section-description">Click on the card to learn more.</h4>
       </div>
       <div class="section-main card-picker">
-        <div class="card-picker-categories">
-          <div class="card-picker-category clickable">
-            <img class="card-picker-category-icon" src="assets/images/icons/pipdeck-icon-recipe.webp" alt="">
-            <p class="card-picker-category-name">Recipe</p>
+        <div class="card-picker-categories-wrapper">
+          <div class="card-picker-categories flex">
           </div>
         </div>
-        <div class="card-picker-deck">
-          <img class="card-picker-deck-item" src="assets/images/cards/Character_-_Cut_to_the_Chase_-_Front.webp" alt="">
+        <div class="card-picker-deck-wrapper">
+          <div class="card-picker-deck grid">
+          </div>
         </div>
+
       </div>
     </section>
     <section class="section-3">
       <div class="section-header">
         <h2 class="section-title">Craft your story!</h2>
-        <h4 class="section-description">Create three story variations and see which story you like best!</h4>
+        <h4 class="section-description">Drag and drop cards and create three story variations.</h4>
+      </div>
+      <div class="section-main story-lab">
+        <div class="story-labs flex nowrap">
+          <div class="story-lab">
+            <div class="story-lab-header">
+              <h4 class="story-lab-title">Story 1</h4>
+            </div>
+            <div class="card card-holder">
+            </div>
+          </div>
+          <div class="story-lab">
+            <div class="story-lab-header">
+              <h4 class="story-lab-title">Story 2</h4>
+            </div>
+            <div class="card card-holder">
+            </div>
+          </div>
+          <div class="story-lab">
+            <div class="story-lab-header">
+              <h4 class="story-lab-title">Story 3</h4>
+            </div>
+            <div class="card card-holder">
+            </div>
+          </div>
+        </div>
+        <div class="story-lab-footer">
+          <p class="story-lab-brief-label">Make the elements of your story fit each tactic. See which story you like best!</p>
+          <textarea class="story-lab-brief" name="story-lab-1-brief" rows="8" cols="80"></textarea>
+        </div>
       </div>
     </section>
+    <div class="card-picker-deck-item-info-wrapper hidden">
+      <div class="card-picker-deck-item-info-header">
+        <h4 class="card-picker-deck-item-info-close">Close</h4>
+      </div>
+      <div class="card-picker-deck-item-info flex">
+        <img class="card-picker-deck-info-image" src="assets/images/cards/Character_-_Cut_to_the_Chase_-_Front.webp" alt="">
+        <article class="card-picker-deck-item-info-article">
+      </div>
+      </article>
+    </div>
   </main>
   <footer class="site-footer">
     <p>Made with ❤️ by <a href="https://www.genevievemasioni.com">Geneviève Masioni</a> using publicly and freely available resources from <a href="https://pipdecks.com/pages/storyteller-tactics/">Pip Decks</a>.</p>

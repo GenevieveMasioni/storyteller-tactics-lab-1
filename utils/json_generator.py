@@ -19,7 +19,7 @@ def generate_cards(image_folder_path):
         filepath = os.path.join(image_folder_path, filename)
         if os.path.isfile(filepath) and not filename.startswith('.'): # ignore hidden files
             filename_chunks = filename.split("-")
-            card_category = filename_chunks[0].lower()
+            card_category = re.sub("_", "", filename_chunks[0]).lower()
             card_handle = string_to_url_handle(filename_chunks[1], "_")
             cards.append({ "category": card_category, "handle": card_handle, "image": filename })
     return cards
