@@ -1,6 +1,8 @@
 # Storyteller Tactics Lab
 
-An online lab to craft engaging stories using the [Storyteller Tactics](https://pipdecks.com/products/storyteller-tactics) deck.
+An [online lab to craft engaging stories](https://genevievemasioni.github.io/storyteller-tactics-lab/) using the [Storyteller Tactics](https://pipdecks.com/products/storyteller-tactics) deck.
+
+Visit the website here: https://genevievemasioni.github.io/storyteller-tactics-lab/
 
 ![UI preview](https://raw.githubusercontent.com/GenevieveMasioni/storyteller-tactics-lab/main/assets/images/storyteller-tactics-lab-2.png)
 
