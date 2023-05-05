@@ -46,8 +46,13 @@ img {
 }
 
 textarea {
+  box-sizing: border-box;
   border: var(--base-border);
   width: 100%;
+  font-family: 'Libre Caslon Text', serif;
+  padding: var(--base-padding);
+  font-style: italic;
+  background: url("https://www.transparenttextures.com/patterns/lined-paper-2.png");
 }
 
 .clickable:hover {
@@ -198,7 +203,7 @@ textarea {
   bottom: 0;
   flex-wrap: nowrap;
   grid-gap: 2rem;
-  width: 80%;
+  width: 70%;
   height: 80%;
   margin: 0 auto;
   border: var(--thick-border);
@@ -248,17 +253,36 @@ textarea {
   flex: 1 1;
 }
 
+.story-lab-header {
+  justify-content: space-between;
+}
+
+.story-lab-footer {
+  display: inherit;
+}
+
+.collapsed .card-holder,
+.collapsed .story-lab-footer {
+  display: none;
+}
+
 .card-holder {
   border: var(--thick-border);
   border-style: dashed;
   background-color: var(--background-color-2);
   /* width: 13.5rem; */
   /* height: 22rem; */
-  aspect-ratio: 9 / 16;
+  /* aspect-ratio: 16 / 9; */
+  margin-bottom: var(--base-margin);
+  justify-content: flex-start;
 }
 
 .card-holder .card-picker-deck-item {
   margin: 0 auto;
+  pointer-events: none;
+  max-height: 22rem;
+  width: auto;
+  aspect-ratio: 9 / 16;
 }
 
 /* FOOTER */
@@ -269,7 +293,6 @@ textarea {
   text-align: center;
   border-top: var(--base-border);
 }
-
 
 @media all and (max-width:950px) {
 }

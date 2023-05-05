@@ -20,7 +20,7 @@ window.onload = () => {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
     var copy = document.getElementById(data).cloneNode(true);
-    copy.id = "clone-id";
+    copy.id = "clone-id-" + Math.random();
     ev.target.appendChild(copy);
   }
 
@@ -132,8 +132,6 @@ window.onload = () => {
 
   function initUI() {
     const footer = document.querySelector(".site-footer");
-    // document.querySelector("body").style.height = `${window.screen.height}px`;
-    // document.querySelector(".main-content").style.height = `${window.screen.height - footer.clientHeight}px`;
 
     cardDeck = new Deck(cardData.cards);
     populateCategories(cardData.categories, true);
@@ -149,6 +147,11 @@ window.onload = () => {
       introCardFront.classList.remove("invisible");
       introCardBack.classList.add("invisible");
     });
+
+    document.querySelectorAll(".story-lab-collapse").forEach((icon) => {
+      icon.addEventListener("click", (e) => document.querySelector(`#story-lab-${icon.dataset.labNumber}`).classList.toggle("collapsed"));
+    });
+
   }
 
   fetch(ST_DATA_URL)
