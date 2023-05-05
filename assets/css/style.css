@@ -294,5 +294,28 @@ textarea {
   border-top: var(--base-border);
 }
 
+@media all and (max-width:1065px) {
+  .section-1 {
+    display: none;
+  }
+
+  .section-2 {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media all and (max-width:950px) {
+  .main-content {
+    display: block;
+  }
+
+  .section-2 {
+    padding: 0;
+    border: none;
+  }
 }
